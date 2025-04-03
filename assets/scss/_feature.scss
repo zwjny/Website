@@ -1,0 +1,151 @@
+/* ===============================
+    FEATURE SECTION ONE CSS
+================================== */
+
+.feature-section {
+  position: relative;
+  padding-top: 120px;
+
+  .section-title {
+    padding: 0 20px;
+  }
+}
+
+.single-feature {
+  margin-bottom: 10px;
+  @include transition(.3s);
+  border-radius: 10px;
+  padding: 35px 30px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  @include box-shadow(0px 15px 35px rgba(222, 222, 222, 0.25));
+  background: $white;
+  position: relative;
+
+  @media #{$desktop} {
+    padding: 35px 45px;
+  }
+
+  &:hover {
+    background: $primary-color;
+
+    .feature-content {
+
+      h4, p {
+        color: $white;
+      }
+    }
+  }
+
+  .feature-icon {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    background: $primary-color;
+    color: $white;
+    font-size: 40px;
+    @include transition(.3s);
+    margin-right: 20px;
+    overflow: hidden;
+    border: 3px solid $white;
+    top: -42px;
+  }
+
+  .feature-content {
+    margin-top: 30px;
+
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+  }
+}
+
+
+/* ======== feature-section-1 ======== */ 
+
+.feature-section-1 {
+  position: relative;
+  z-index: 1;
+  height: 600px;
+  display: flex;
+  align-items: center;
+
+  @media #{$laptop, $lg} {
+    height: 500px;
+  }
+
+  @media #{$md, $xs} {
+    height: auto;
+    padding-top: 120px;
+  }
+
+  .feature-image {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    width: 50%;
+    @include transform(translateY(-50%));
+
+    @media #{$md, $xs} {
+      margin-top: 60px;
+      position: static;
+      @include transform(translateY(0));
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+
+/* ======== feature-section-2 ======== */ 
+
+.feature-section-2 {
+  position: relative;
+  z-index: 1;
+  height: 600px;
+  display: flex;
+  align-items: center;
+
+  @media #{$lg} {
+    height: 550px;
+  }
+
+  @media #{$md, $xs} {
+    height: auto;
+    padding-top: 120px;
+  }
+
+  .feature-image {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    width: 50%;
+    @include transform(translateY(-50%));
+
+    @media #{$md, $xs} {
+      margin-top: 60px;
+      position: static;
+      @include transform(translateY(0));
+      width: 100%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+}
