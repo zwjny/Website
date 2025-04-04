@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f5f5f5;
+      font-family: 'Poppins', sans-serif;
+      margin: 0 ;
+      padding: 0;
+    }
+    main {
+      margin: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .mb-30 {
+      margin-bottom: 30px;
+    }
+
+    a {
+      transition: all .3s;
+    }
+
+    mark {
+      padding: 3px 10px;
+      background: lavender;
+      color: #111;
+      border-radius: 2px;
+      font-weight: 400;
+    }
+
+    .main-wrapper {
+      max-width: 768px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 50px 25px;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    h2 {
+      margin: 0;
+      margin-bottom: 15px;
+      color: #1a1a1a;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    h4 {
+      margin: 0;
+      margin-bottom: 5px;
+      color: #1a1a1a;
+      font-weight:500;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 300;
+      color: #666;
+    }
+
+    strong {
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+
+    .ticket {
+      text-decoration: none;
+      color: #333333;
+      font-weight: 500;
+      padding: 3px 10px;
+      display: inline-block;
+      position: relative;
+    }
+    .ticket::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 100%;
+      transition: all .3s;
+      background: #606EFF;
+      opacity: .15;
+      border-radius: 3px;
+    }
+    .ticket:hover {
+      color: #487CFF;
+    }
+    .ticket:hover::after {
+      width: 100%;
+    }
+
+    .preview-img {
+      width: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .preview-img img {
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, .1);
+    }
+
+    .box {
+      margin-bottom: 30px;
+    }
+
+    .code-box {
+      padding: 15px;
+      background: #f5f5f5;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+      color: #444;
+      line-height: 1.5;
+      max-height: 450px;
+      overflow-y: scroll;
+      border-left: 3px solid rgb(154, 154, 255);
+    }
+    .credit-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .credit-list li a {
+      font-weight: 500;
+      margin-bottom: 5px;
+      text-decoration: none;
+      line-height: 2;
+      color: #333;
+      transition: all .3s;
+      padding: 0 15px;
+    }
+    .credit-list li a:hover {
+      padding-left: 20px;
+      color: #487CFF;
+    }
+    .template-name {
+      color: #606EFF;
+    }
+
+  </style>
+
+</head>
+<body>
+  <main>
+    <div class="main-wrapper">
+      
+      <div class="welcome mb-30">
+        <h1>Welcome To <span class="template-name">SaaSdeck</span> Template Documentation.</h1>
+        <p>Firstly, a huge thanks for purchasing this Template, your support is truly appreciated!</p>
+
+        <p>This document covers the installation and use of this theme and often reveals answers to common problems and issues - read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document, feel free to <a href="https://uideck.com/support/" class="ticket" target="_blank">Open a Support Ticket</a> </p>
+
+        <div class="preview-img">
+          <img src="assets/images/preview.png" alt="">
+        </div>
+      </div>
+
+      <div class="installing mb-30">
+        <h2>Installing Template.</h2>
+        <p>After unzip the download pack, you'll found a Template Folder with all the files.</p>
+
+        <ol>
+          <li>
+            <p>You can view this Template in any browser, you can display or edit the Template without an internet connection.</p>
+          </li>
+          <li>
+            <p>Now go to your cpanel or open your FTP Client (like Filezilla) and upload the content of the Template on your server root.</p>
+          </li>
+          <li>
+            <p>Once the files are done uploading go to www.yourdomainname.com/index.html</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="code-structure mb-30">
+        <h2>Code Structure</h2>
+
+        <div class="box">
+          <h4>Html Header code</h4>
+<pre class="code-box">
+<code>
+  &lt;!DOCTYPE html>
+  &lt;html class="no-js" lang="">
+    &lt;head>
+      &lt;meta charset="utf-8" />
+      &lt;meta http-equiv="x-ua-compatible" content="ie=edge" />
+      &lt;title>SaaSdeck | Bootstrap 5 SaaS Landing Page&lt;/title>
+      &lt;meta name="description" content="" />
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1" />
+      &lt;link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg"/>
+      &lt;!-- Place favicon.ico in the root directory -->
+
+      &lt;!-- ========================= CSS here ========================= -->
+      &lt;link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta2.min.css" />
+      &lt;link rel="stylesheet" href="assets/css/LineIcons.2.0.css"/>
+      &lt;link rel="stylesheet" href="assets/css/tiny-slider.css"/>
+      &lt;link rel="stylesheet" href="assets/css/animate.css"/>
+      &lt;link rel="stylesheet" href="assets/css/main.css"/>
+    &lt;/head>
+</code>
+</pre>
+        </div>
+
+        <div class="box">
+          <h4>Html Footer code</h4>
+<pre class="code-box">
+<code>
+      &lt;!-- ========================= scroll-top ========================= -->
+      &lt;a href="#" class="scroll-top btn-hover">
+        &lt;i class="lni lni-chevron-up">&lt;/i>
+      &lt;/a>
+
+      &lt;!-- ========================= JS here ========================= -->
+      &lt;script src="assets/js/bootstrap-5.0.0-beta2.min.js">&lt;/script>
+      &lt;script src="assets/js/tiny-slider.js">&lt;/script>
+      &lt;script src="assets/js/wow.min.js">&lt;/script>
+      &lt;script src="assets/js/polyfill.js">&lt;/script>
+      &lt;script src="assets/js/main.js">&lt;/script>
+    &lt;/body>
+  &lt;/html>
+</code>
+</pre>
+        </div>
+        <div class="box">
+          <h4>Section code</h4>
+<pre class="code-box">
+<code>
+  &lt;!-- ========================= section start ========================= -->
+  &lt;section class="section">
+    ---
+      ---
+        <span style="font-size: 18px;">section content</span>
+      ---
+    ---
+  &lt;/section>
+  &lt;!-- ========================= section end ========================= -->
+</code>
+</pre>
+        </div>
+
+      </div>
+
+      <div class="customization mb-30">
+        <h2>Customization</h2>
+
+        <div class="box">
+          <h4>Changing Default Color</h4>
+          <p>As its default color is <mark style="background: #606EFF; color: #fff;">#606EFF</mark> . Open assets->css>main.css file and and find out all <mark style="background: #606EFF; color: #fff;">#606EFF</mark> then replace it with your own color code, to change the color preset</p>
+          <p> <strong>Note: </strong> If you are familiar with scss you can go with scss variables.</p>
+        </div>
+
+        <div class="box">
+          <h4>Changing Default Font Family</h4>
+          <p>As its default Font is <mark>Mulish</mark> . Open assets->css>main.css file and and find out all <mark>font-family</mark> then replace its property with your own, to change the default font-family. But, make sure you have including the font before on header (using CSS link) or on CSS (using import)
+          </p>
+          <p> <strong>Note: </strong> If you are familiar with scss you can go with scss variables.</p>
+        </div>
+
+      </div>
+
+      <div class="credit mb-30">
+        <h2>Credits</h2>
+
+        <ul class="credit-list">
+          <li>
+            <a href="https://getbootstrap.com/" target="_blank" class="ticket">Bootstrap</a>
+          </li>
+          <li>
+            <a href="http://lineicons.com/" target="_blank" class="ticket">LineIcons</a>
+          </li>
+          <li>
+            <a href="https://ganlanyuan.github.io/tiny-slider/demo/" target="_blank" class="ticket">Tiny Slider</a>
+          </li>
+          <li>
+            <a href="https://animate.style/" target="_blank" class="ticket">Animate Css</a>
+          </li>
+          <li>
+            <a href="https://wowjs.uk/" target="_blank" class="ticket">Wow JS</a>
+          </li>
+          <li>
+            <a href="https://unsplash.com/" target="_blank" class="ticket">Unsplash</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
