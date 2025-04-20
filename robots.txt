@@ -1,0 +1,14 @@
+# Allow all user agents (search engine bots) to access the site
+User-agent: *
+
+# Disallow access to the admin area
+Disallow: /admin/
+
+# Disallow access to the login page
+Disallow: /login/
+
+# Allow access to everything else on the site
+Allow: /
+
+# Specify the location of the sitemap
+Sitemap: https://zwjny.com/sitemap.xml
