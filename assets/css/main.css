@@ -469,7 +469,7 @@ p {
 }
 
 .navbar-brand img {
-  max-width: 180px;
+  max-width: 163px;
 }
 
 .navbar-toggler {
@@ -720,6 +720,7 @@ p {
   box-shadow: 0px 15px 35px rgba(222, 222, 222, 0.25);
   background: #fff;
   position: relative;
+  min-height: 197px;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -792,7 +793,7 @@ p {
 
 .feature-section-1 .feature-image {
   position: absolute;
-  left: -50px;
+  right: -50px;
   top: 50%;
   width: 50%;
   transform: translateY(-50%);
@@ -835,7 +836,7 @@ p {
 
 .feature-section-2 .feature-image {
   position: absolute;
-  right: -50px;
+  left: -50px;
   top: 50%;
   width: 50%;
   transform: translateY(-50%);
@@ -1294,7 +1295,11 @@ p {
 }
 
 .footer .footer-widget .logo {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.footer .footer-widget .logo img{
+  max-width: 90px;
 }
 
 .footer .footer-widget .desc {
