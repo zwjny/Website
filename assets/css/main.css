@@ -97,6 +97,10 @@ h2 {
   font-size: 45px;
 }
 
+.section-title h2{
+  color: #0A4957 !important;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title h2 {
     font-size: 36px;
@@ -248,7 +252,7 @@ p {
 
 .scroll-top:hover {
   color: #fff;
-  background: rgba(96, 110, 255, 0.8);
+  background: #f8bb2d;
 }
 
 @keyframes animation1 {
@@ -440,11 +444,11 @@ p {
 }
 
 .sticky .navbar .navbar-nav .nav-item a.active, .sticky .navbar .navbar-nav .nav-item a:hover {
-  color: #606EFF;
+  color: #D6A026;
 }
 
 .sticky .navbar .navbar-nav .nav-item a.active::after, .sticky .navbar .navbar-nav .nav-item a:hover::after {
-  background: #606EFF;
+  background: #D6A026;
 }
 
 .sticky .navbar .navbar-toggler .toggler-icon {
@@ -569,18 +573,18 @@ p {
 }
 
 .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
-  color: #606EFF;
+  color: #D6A026;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a.active {
-    color: #606EFF;
+    color: #D6A026;
   }
 }
 
 .navbar-nav .nav-item a.main-btn {
   color: #fff;
-  background: #606EFF;
+  background: #D6A026;
   padding: 9px 20px;
   border-radius: 30px;
 }
@@ -647,6 +651,7 @@ p {
 
 .hero-section .hero-content h1 {
   margin-bottom: 15px;
+  color: #0A4957;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -730,7 +735,7 @@ p {
 }
 
 .single-feature:hover {
-  background: #606EFF;
+  background: #D6A026;
 }
 
 .single-feature:hover .feature-content h4, .single-feature:hover .feature-content p {
@@ -747,7 +752,7 @@ p {
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
-  background: #606EFF;
+  background: #D6A026;
   color: #fff;
   font-size: 40px;
   transition: all 0.3s ease-out 0s;
@@ -763,6 +768,7 @@ p {
 
 .single-feature .feature-content h4 {
   margin-bottom: 20px;
+  color: #0A4957;
 }
 
 .single-feature .feature-content p {
@@ -1322,7 +1328,7 @@ p {
   height: 32px;
   border-radius: 10px;
   background: rgba(96, 110, 255, 0.1);
-  color: #606EFF;
+  color: #D6A026;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1330,7 +1336,7 @@ p {
 }
 
 .footer .footer-widget .social-links li a:hover {
-  background: #606EFF;
+  background: #D6A026;
   color: #fff;
 }
 
@@ -1347,7 +1353,7 @@ p {
 
 .footer .footer-widget .links li a:hover {
   padding-left: 8px;
-  color: #606EFF;
+  color: #D6A026;
 }
 
 .footer .copyright {
@@ -1362,7 +1368,7 @@ p {
 }
 
 .footer .copyright a:hover {
-  color: #606EFF;
+  color: #D6A026;
 }
 
 /* ======================
