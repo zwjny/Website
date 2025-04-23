@@ -609,7 +609,7 @@ p {
 
 .header-btn .main-btn {
   color: #fff;
-  background: #606EFF;
+  background: #D6A026;
   padding: 9px 20px;
   border-radius: 30px;
 }
@@ -756,10 +756,11 @@ p {
   color: #fff;
   font-size: 40px;
   transition: all 0.3s ease-out 0s;
-  margin-right: 20px;
+  margin-right: 50%;
   overflow: hidden;
   border: 3px solid #fff;
   top: -42px;
+  right: -42px;
 }
 
 .single-feature .feature-content {
