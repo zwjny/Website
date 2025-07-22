@@ -15,10 +15,12 @@ html {
 }
 
 body {
-  font-family: "Mulish", "Vazirmatn", sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  color: rgba(0, 0, 0, 0.7);
+  font-family: "Cairo", sans-serif;
+  text-align: right;
+  direction: rtl;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.8;
   overflow-x: hidden;
 }
 
@@ -641,6 +643,22 @@ p {
   background-position: bottom center;
   background-repeat: no-repeat;
   z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.about-content h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #0a4957;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1367,6 +1385,8 @@ p {
 .footer {
   position: relative;
   z-index: 1;
+  background-color: #f1f1f9;
+  padding: 60px 0 30px;
 }
 
 .footer .shape {
@@ -1377,7 +1397,7 @@ p {
 }
 
 .footer .footer-widget {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .footer .footer-widget .logo {
@@ -1390,6 +1410,30 @@ p {
 
 .footer .footer-widget .desc {
   margin-bottom: 25px;
+}
+
+.footer .logo h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.footer .desc {
+  font-size: 15px;
+  color: #666;
+}
+.footer-widget h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #0a4957;
+}
+.footer-widget .links li {
+  margin-bottom: 10px;
+}
+.footer-widget .links li a {
+  color: #606060;
+  text-decoration: none;
+}
+.footer-widget .links li a:hover {
+  color: #d6a026;
 }
 
 @media only screen and (min-width: 1400px) {

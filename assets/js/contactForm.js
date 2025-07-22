@@ -24,25 +24,26 @@ form.addEventListener("submit", async function (e) {
   // Validations
   let isValid = true;
   if (fullName.value.trim().length === 0) {
-    nameError.textContent = "الإسم مطلوب";
+    nameError.textContent = "يرجى إدخال الاسم الكامل";
     isValid = false;
   }
 
   if (mobile.value.trim().length === 0) {
-    mobileError.textContent = "رقم الجوال مطلوب";
+    mobileError.textContent = "يرجى إدخال رقم الجوال";
     isValid = false;
   } else if (!saudiMobileNumberPattern.test(mobile.value.trim())) {
-    mobileError.textContent = "يرجى إدخال رقم جوال سعودي صالح";
+    mobileError.textContent =
+      "رقم الجوال غير صالح، الرجاء إدخال رقم سعودي صحيح";
     isValid = false;
   }
 
   if (category.value.trim().length === 0) {
-    categoryError.textContent = "التصنيف مطلوب";
+    categoryError.textContent = "يرجى اختيار التصنيف";
     isValid = false;
   }
 
   if (message.value.trim().length === 0) {
-    messageError.textContent = "الرسالة مطلوبة";
+    messageError.textContent = "يرجى كتابة الرسالة";
     isValid = false;
   }
 
@@ -60,13 +61,13 @@ form.addEventListener("submit", async function (e) {
       body: JSON.stringify(data),
     });
     if (response.ok) {
-      alert("تم الإرسال بنجاح");
+      alert("تم إرسال النموذج بنجاح، شكرًا لتواصلك معنا");
       form.reset();
     } else {
-      alert("حصل خطء ما");
+      alert("حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى لاحقًا");
     }
   } catch (e) {
     console.log("error: ", e);
-    alert("حصل خطء ما");
+    alert("حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى لاحقًا");
   }
 });

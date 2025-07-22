@@ -18,15 +18,15 @@ form.addEventListener("submit", async function (e) {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (fullName.value.trim().length === 0) {
-    nameError.textContent = "الإسم مطلوب";
+    nameError.textContent = "يرجى إدخال الاسم الكامل";
     isValid = false;
   }
 
   if (email.value.trim().length === 0) {
-    emailError.textContent = "البريد الإلكتروني مطلوب";
+    emailError.textContent = "يرجى إدخال البريد الإلكتروني";
     isValid = false;
   } else if (!emailPattern.test(email.value)) {
-    emailError.textContent = "يرجى إدخال بريد إلكتروني صالح";
+    emailError.textContent = "صيغة البريد الإلكتروني غير صحيحة";
     isValid = false;
   }
 
@@ -45,13 +45,13 @@ form.addEventListener("submit", async function (e) {
       body: JSON.stringify(data),
     });
     if (response.ok) {
-      alert("تم الإرسال بنجاح");
+      alert("تم إرسال الإحالة بنجاح. شكرًا لمشاركتك");
       form.reset();
     } else {
-      alert("حصل خطء ما");
+      alert("حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى لاحقًا");
     }
   } catch (e) {
     console.log("Error: ", e);
-    alert("حصل خطء ما");
+    alert("حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى لاحقًا");
   }
 });
