@@ -10,7 +10,7 @@ const categoryError = document.getElementById("categoryError");
 const message = document.getElementById("message");
 const messageError = document.getElementById("messageError");
 
-const saudiMobileNumberPattern = /^(?:\+966|00966)?5\d{8}$/;
+const saudiMobileNumberPattern = /^(?:\+966|00966)5\d{8}$/;
 
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
