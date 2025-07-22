@@ -535,6 +535,11 @@ p {
     box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     padding: 5px 12px;
   }
+
+
+  .navbar-brand img {
+    margin-right: 50px;
+  }
 }
 
 .navbar-nav .nav-item {
@@ -542,6 +547,7 @@ p {
   padding: 8px 0;
   margin-right: 40px;
 }
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
   (max-width: 767px) {
@@ -654,6 +660,25 @@ p {
   color: #555;
   margin-bottom: 30px;
 }
+.privacy-section {
+  position: relative;
+  align-items: center;
+  background-image: url("../images/hero/hero-bg.svg");
+  background-size: cover;
+  background-position: -1400px -50px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.terms-section {
+  position: relative;
+  align-items: center;
+  background-image: url("../images/hero/hero-bg.svg");
+  background-size: cover;
+  background-position: -1100px -50px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
 
 .about-content h1 {
   font-size: 32px;
@@ -679,6 +704,10 @@ p {
     height: auto;
     padding: 150px 0 50px;
   }
+  .privacy-section,
+  .terms-section {
+    background-image: none;
+  }
 }
 
 .hero-section .hero-content h1 {
@@ -695,6 +724,11 @@ p {
 @media (max-width: 767px) {
   .hero-section .hero-content h1 {
     font-size: 45px;
+  }
+
+  .privacy-section,
+  .terms-section {
+    background-image: none;
   }
 }
 
