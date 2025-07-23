@@ -3,8 +3,8 @@ const webhookURL = "https://hook.eu2.make.com/0m1cc241jyktf7hlsf2kl4rt81g97ac7";
 const form = document.getElementById("referral-form");
 const fullName = document.getElementById("name");
 const nameError = document.getElementById("nameError");
-const email = document.getElementById("email");
-const emailError = document.getElementById("emailError");
+const mobile = document.getElementById("mobile");
+const mobileError = document.getElementById("mobileError");
 
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
@@ -13,20 +13,21 @@ form.addEventListener("submit", async function (e) {
 
   //   clear previous errors
   nameError.textContent = "";
-  emailError.textContent = "";
+  mobileError.textContent = "";
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const saudiMobileNumberPattern = /^(?:\+966|00966)5\d{8}$/;
 
   if (fullName.value.trim().length === 0) {
-    nameError.textContent = "يرجى إدخال الاسم الكامل";
+    nameError.textContent = "يرجى إدخال الاسم الأول";
     isValid = false;
   }
 
-  if (email.value.trim().length === 0) {
-    emailError.textContent = "يرجى إدخال البريد الإلكتروني";
+  if (mobile.value.trim().length === 0) {
+    mobileError.textContent = "يرجى إدخال رقم الجوال";
     isValid = false;
-  } else if (!emailPattern.test(email.value)) {
-    emailError.textContent = "صيغة البريد الإلكتروني غير صحيحة";
+  } else if (!saudiMobileNumberPattern.test(mobile.value.trim())) {
+    mobileError.textContent =
+      "رقم الجوال غير صالح، الرجاء إدخال رقم سعودي صحيح";
     isValid = false;
   }
 
