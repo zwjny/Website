@@ -343,7 +343,7 @@ p {
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #606eff #606eff rgba(0, 0, 0, 0.1);
+  border-color: #0a4957 #0a4957 rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   border-width: 6px;
 }
@@ -536,7 +536,6 @@ p {
     padding: 5px 12px;
   }
 
-
   .navbar-brand img {
     margin-right: 50px;
   }
@@ -612,6 +611,10 @@ p {
   .header-btn {
     display: none;
   }
+
+  .header-btn-mobile {
+    display: inline !important;
+  }
 }
 
 @media only screen and (min-width: 550px) and (max-width: 767px) {
@@ -632,6 +635,20 @@ p {
   background: #d6a026;
   padding: 9px 20px;
   border-radius: 30px;
+}
+
+.header-btn-mobile {
+  display: none;
+  color: #fff;
+  padding: 9px 20px;
+}
+
+.header-btn-mobile .main-btn {
+  background-color: #d6a026;
+}
+
+.header-btn-mobile hr{
+  color: #000;
 }
 
 /* ====================
@@ -1419,7 +1436,7 @@ p {
   position: relative;
   z-index: 1;
   background-color: #f1f1f9;
-  padding: 60px 0 30px;
+  padding: 60px 0 0px;
 }
 
 .footer .shape {
@@ -1468,7 +1485,6 @@ p {
 .footer-widget .links li a:hover {
   color: #d6a026;
 }
-
 
 .footer .footer-widget .social-links {
   display: flex;
@@ -1523,11 +1539,47 @@ p {
   color: #d6a026;
 }
 
+.footer-registered-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-registered-container img {
+  width: 140px;
+  height: auto;
+}
+
+@media only screen and (max-width: 912px) {
+  .footer-registered-container {
+    padding-bottom: 20px;
+  }
+
+  .footer-registered-container img {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .footer-registered-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 100px;
+    padding-right: 30px;
+  }
+
+  .footer-registered-container img {
+    width: 100px;
+  }
+}
+
 /* ======================
     Form CSS
 ========================= */
 .contact-form {
-  padding: 80px 0;
+  padding: 30px 0;
 }
 .contact-form .form-control {
   border-radius: 8px;
