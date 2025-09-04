@@ -647,7 +647,7 @@ p {
   background-color: #d6a026;
 }
 
-.header-btn-mobile hr{
+.header-btn-mobile hr {
   color: #000;
 }
 
@@ -733,13 +733,17 @@ p {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero-section .hero-content h1 {
-    font-size: 50px;
+    font-size: 28px;
   }
 }
 
 @media (max-width: 767px) {
   .hero-section .hero-content h1 {
-    font-size: 45px;
+    font-size: 28px;
+  }
+
+  .about-content h1 {
+    font-size: 28px;
   }
 
   .privacy-section,
@@ -1073,6 +1077,11 @@ p {
 .single-pricing.standard {
   transform: scale(1.12);
   padding: 60px 50px;
+}
+
+.footer-phone-number {
+  color: #d6a026;
+  font-size: 18px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
