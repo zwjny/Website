@@ -1084,6 +1084,26 @@ p {
   font-size: 18px;
 }
 
+.phone-number-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.phone-number-container img {
+  width: 30px;
+  height: auto;
+}
+
+.phone-number-container p {
+  color: #d6a026;   
+  margin-bottom: 0 !important;
+  font-size: 18px;
+
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-pricing.standard {
     padding: 40px 20px;
